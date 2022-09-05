@@ -10,6 +10,10 @@ import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
 
+//Challenge: Graded Quiz
+import kotlin.math.roundToInt
+
+
 private const val TAG = "MainActivity"
 
 class MainActivity : AppCompatActivity() {
@@ -31,7 +35,7 @@ class MainActivity : AppCompatActivity() {
     //Challenge: Graded Quiz
     private var totalCLicks: Int = 0
     private var correctAnswers: Int = 0
-    private var percentage: Double = 0.0
+    private var percentage: Int = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -121,9 +125,9 @@ class MainActivity : AppCompatActivity() {
             totalCLicks++
         }
 
-        percentage = ((correctAnswers/ totalCLicks) + (correctAnswers % totalCLicks)).toDouble() * 100
+        percentage = ((correctAnswers.toDouble() / totalCLicks) * 100).roundToInt()
 
-        val t = Toast.makeText (this, "Current Percentage: $percentage % \ncorrect $correctAnswers \ntotal $totalCLicks",Toast.LENGTH_SHORT)
+        val t = Toast.makeText (this, "Overall Grade: $percentage% ",Toast.LENGTH_SHORT)
         t.setGravity(Gravity.TOP , 0, 200)
         t.show()
     }
