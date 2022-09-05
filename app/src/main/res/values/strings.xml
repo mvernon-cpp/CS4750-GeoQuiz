@@ -14,6 +14,7 @@
     <string name="false_button">False</string>
     <string name="correct_toast">Correct!</string>
     <string name="incorrect_toast">Incorrect!</string>
-    <string name="next_button">Next</string>
+<!--    Challenge CH3 - remove next button for easier enumeration -->
+<!--    <string name="next_button">Next</string>-->
 
 </resources>
