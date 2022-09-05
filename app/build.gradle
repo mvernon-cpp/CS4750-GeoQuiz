@@ -5,7 +5,8 @@ plugins {
 
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
-apply plugin: 'kotlin-android-extensions'
+//deprecated plugin
+//apply plugin: 'kotlin-android-extensions'
 
 android {
     compileSdk 32
