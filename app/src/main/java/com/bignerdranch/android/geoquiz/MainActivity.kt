@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity() {
     private val quizViewModel: QuizViewModel by lazy {
 //        val viewModel: QuizViewModel by viewModels()
 
-        ViewModelProvider(this).get(QuizViewModel::class.java)
+        ViewModelProvider(this)[QuizViewModel::class.java]
     }
 
 
