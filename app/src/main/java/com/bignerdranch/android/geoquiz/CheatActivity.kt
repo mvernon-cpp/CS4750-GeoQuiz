@@ -1,10 +1,13 @@
 package com.bignerdranch.android.geoquiz
 
+import android.app.Activity
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
 
+const val EXTRA_ANSWER_SHOWN = "com.bignerdranch.android.geoquiz.answer_shown"
 const val EXTRA_ANSWER_IS_TRUE =
     "com.bignerdranch.android.geoquiz.answer_is_true"
 
@@ -30,7 +33,15 @@ class CheatActivity : AppCompatActivity() {
             }
 
             answerTextView.setText(answerText)
+            setAnswerShownResult(true)
+
         }
 
+    }
+    private fun setAnswerShownResult(isAnswerShown: Boolean) {
+        val data = Intent().apply {
+            putExtra(EXTRA_ANSWER_SHOWN, isAnswerShown)
+        }
+        setResult(Activity.RESULT_OK, data)
     }
 }
