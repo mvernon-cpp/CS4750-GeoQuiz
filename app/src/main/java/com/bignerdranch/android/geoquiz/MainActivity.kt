@@ -11,6 +11,7 @@ import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
 import androidx.lifecycle.ViewModelProvider
+import com.bignerdranch.android.geoquiz.MainActivity.Companion.newIntent
 
 private const val TAG = "MainActivity"
 private const val KEY_INDEX = "index"
@@ -58,7 +59,8 @@ class MainActivity : AppCompatActivity() {
         }
 
         cheatButton.setOnClickListener {
-            val intent = Intent(this, CheatActivity::class.java)
+            val answerIsTrue = quizViewModel.currentQuestionAnswer
+            val intent = CheatActivity.newIntent(this@MainActivity, answerIsTrue)
             startActivity(intent)
         }
 
