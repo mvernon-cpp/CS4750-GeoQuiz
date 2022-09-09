@@ -1,5 +1,6 @@
 package com.bignerdranch.android.geoquiz
 
+import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 
@@ -63,6 +64,14 @@ class MainActivity : AppCompatActivity() {
 
         updateQuestion()
 
+    }
+
+    companion object {
+        fun newIntent(packageContext: Context, answerIsTrue: Boolean): Intent {
+            return Intent(packageContext, CheatActivity::class.java).apply {
+                putExtra(EXTRA_ANSWER_IS_TRUE, answerIsTrue)
+            }
+        }
     }
 
     override fun onStart() {
