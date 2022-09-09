@@ -60,7 +60,7 @@ class MainActivity : AppCompatActivity() {
 
         cheatButton.setOnClickListener {
             val answerIsTrue = quizViewModel.currentQuestionAnswer
-            val intent = CheatActivity.newIntent(this@MainActivity, answerIsTrue)
+            val intent = newIntent(this@MainActivity, answerIsTrue)
             startActivity(intent)
         }
 
