@@ -1,15 +1,25 @@
 <resources>
-    <string name="app_name">GeoQuiz</string>
-    <string name="question_australia">Canberra is the capital of Australia.</string>
-    <string name="question_oceans">The Pacific Ocean is larger than
- the Atlantic Ocean.</string>
-    <string name="question_mideast">The Suez Canal connects the Red Sea
- and the Indian Ocean.</string>
-    <string name="question_africa">The source of the Nile River is in Egypt.</string>
-    <string name="question_americas">The Amazon River is the longest river
- in the Americas.</string>
-    <string name="question_asia">Lake Baikal is the world\'s oldest and deepest
- freshwater lake.</string>
+<!--    <string name="app_name">GeoQuiz</string>-->
+<!--    <string name="question_australia">Canberra is the capital of Australia.</string>-->
+<!--    <string name="question_oceans">The Pacific Ocean is larger than-->
+<!-- the Atlantic Ocean.</string>-->
+<!--    <string name="question_mideast">The Suez Canal connects the Red Sea-->
+<!-- and the Indian Ocean.</string>-->
+<!--    <string name="question_africa">The source of the Nile River is in Egypt.</string>-->
+<!--    <string name="question_americas">The Amazon River is the longest river-->
+<!-- in the Americas.</string>-->
+<!--    <string name="question_asia">Lake Baikal is the world\'s oldest and deepest-->
+<!-- freshwater lake.</string>-->
+
+
+    <!--    Personalize Questions -->
+    <string name="app_name">PlantQuiz</string>
+    <string name="question_pollen">On a flower, the anther produces pollen.</string>
+    <string name="question_foodchain">In a food chain, plants are known as decomposers.</string>
+    <string name="question_treeAge">A tree\'s age can be determined by counting the rings in the trunk.</string>
+    <string name="question_stems">Plants absorbed water through their stems.</string>
+    <string name="question_photosynthesis">Glycolysis is the biological process by which plants \'make their food\'.</string>
+
     <string name="true_button">True</string>
     <string name="false_button">False</string>
     <string name="correct_toast">Correct!</string>
